@@ -21,7 +21,7 @@ const Index = () => {
           <div className="flex items-center justify-between h-20">
             <div className="flex items-center gap-2">
               <Icon name="Truck" size={32} className="text-accent" />
-              <h1 className="text-2xl font-bold text-primary">ТрансЛогистик</h1>
+              <h1 className="text-2xl font-bold text-primary">La Carte</h1>
             </div>
             
             <nav className="hidden md:flex gap-8">
@@ -110,7 +110,7 @@ const Index = () => {
                 О компании
               </h2>
               <p className="text-lg text-muted-foreground text-center mb-12 leading-relaxed">
-                ТрансЛогистик — надёжный партнёр в грузовых перевозках по России и Северо-Западу
+                La Carte — надёжный партнёр в грузовых перевозках по России и Северо-Западу
               </p>
 
               <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -192,12 +192,6 @@ const Index = () => {
                   features: ['Экскаваторы', 'Погрузчики', 'Бульдозеры']
                 },
                 {
-                  icon: 'Package',
-                  title: 'Перевозка негабаритных грузов',
-                  desc: 'Транспортировка крупногабаритных и тяжеловесных грузов с получением всех разрешений.',
-                  features: ['Крупногабаритные грузы', 'Тяжеловесные грузы', 'Оформление разрешений']
-                },
-                {
                   icon: 'Settings',
                   title: 'Индивидуальные решения',
                   desc: 'Разработка персональных транспортных схем под уникальные требования вашего бизнеса.',
@@ -266,8 +260,8 @@ const Index = () => {
                       </div>
                       <div>
                         <h4 className="font-semibold text-primary mb-1">Email</h4>
-                        <p className="text-muted-foreground">info@translogistik.ru</p>
-                        <p className="text-muted-foreground">support@translogistik.ru</p>
+                        <p className="text-muted-foreground">info@lacarte.ru</p>
+                        <p className="text-muted-foreground">support@lacarte.ru</p>
                       </div>
                     </div>
 
@@ -335,7 +329,7 @@ const Index = () => {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Icon name="Truck" size={28} className="text-accent" />
-                <h3 className="text-xl font-bold">ТрансЛогистик</h3>
+                <h3 className="text-xl font-bold">La Carte</h3>
               </div>
               <p className="text-white/80 text-sm">
                 Профессиональные логистические решения для вашего бизнеса
@@ -346,9 +340,9 @@ const Index = () => {
               <h4 className="font-semibold mb-4">Услуги</h4>
               <ul className="space-y-2 text-sm text-white/80">
                 <li>Грузоперевозки</li>
-                <li>Складское хранение</li>
-                <li>Международная доставка</li>
-                <li>Складская логистика</li>
+                <li>Спецтранспорт</li>
+                <li>Спецтехника</li>
+                <li>Перевозки по СПб</li>
               </ul>
             </div>
 
@@ -366,14 +360,14 @@ const Index = () => {
               <h4 className="font-semibold mb-4">Связаться</h4>
               <ul className="space-y-2 text-sm text-white/80">
                 <li>+7 (495) 123-45-67</li>
-                <li>info@translogistik.ru</li>
+                <li>info@lacarte.ru</li>
                 <li>г. Москва</li>
               </ul>
             </div>
           </div>
 
           <div className="border-t border-white/20 pt-8 text-center text-sm text-white/60">
-            <p>© 2024 ТрансЛогистик. Все права защищены.</p>
+            <p>© 2024 La Carte. Все права защищены.</p>
           </div>
         </div>
       </footer>
