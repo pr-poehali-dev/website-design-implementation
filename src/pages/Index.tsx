@@ -19,9 +19,16 @@ const Index = () => {
       <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
-            <div className="flex items-center gap-2">
-              <Icon name="Truck" size={32} className="text-accent" />
-              <h1 className="text-2xl font-bold text-primary">La Carte</h1>
+            <div className="flex items-center gap-3">
+              <img 
+                src="https://cdn.poehali.dev/files/648f57e9-1221-4c80-99dc-218283beb5a3.jpg" 
+                alt="La Carte" 
+                className="h-12 w-12 object-contain"
+              />
+              <div>
+                <h1 className="text-2xl font-bold text-primary leading-tight">La Carte</h1>
+                <p className="text-xs text-primary/70">Сила в движении!</p>
+              </div>
             </div>
             
             <nav className="hidden md:flex gap-8">
@@ -180,16 +187,70 @@ const Index = () => {
                   features: ['Городские перевозки', 'Областные маршруты', 'Срочная доставка']
                 },
                 {
-                  icon: 'Construction',
-                  title: 'Спецтранспорт',
-                  desc: 'Манипуляторы, краны, эвакуаторы и другая специализированная техника для любых задач.',
-                  features: ['Манипуляторы', 'Краны', 'Эвакуаторы']
+                  icon: 'Trash2',
+                  title: 'Мусоровозы',
+                  desc: 'Специализированный транспорт для вывоза и утилизации твёрдых бытовых и промышленных отходов.',
+                  features: ['Вывоз ТБО', 'Промышленные отходы', 'Контейнерная система']
                 },
                 {
-                  icon: 'HardHat',
-                  title: 'Спецтехника',
-                  desc: 'Аренда экскаваторов, погрузчиков, бульдозеров и другой строительной техники.',
-                  features: ['Экскаваторы', 'Погрузчики', 'Бульдозеры']
+                  icon: 'Container',
+                  title: 'Контейнеровозы',
+                  desc: 'Перевозка грузовых контейнеров различных типов и размеров по городу и области.',
+                  features: ['20-футовые', '40-футовые', 'Специальные контейнеры']
+                },
+                {
+                  icon: 'Droplet',
+                  title: 'Ассенизаторы',
+                  desc: 'Услуги ассенизаторской техники для откачки и транспортировки жидких отходов.',
+                  features: ['Откачка септиков', 'Очистка выгребных ям', 'Промышленная откачка']
+                },
+                {
+                  icon: 'Zap',
+                  title: 'Автовышки',
+                  desc: 'Аренда автовышек для высотных работ любой сложности с опытными операторами.',
+                  features: ['До 28 метров', 'С оператором', 'Монтажные работы']
+                },
+                {
+                  icon: 'Move',
+                  title: 'Бульдозеры',
+                  desc: 'Мощная техника для земляных работ, планировки территорий и расчистки участков.',
+                  features: ['Планировка грунта', 'Расчистка территорий', 'Земляные работы']
+                },
+                {
+                  icon: 'Construction',
+                  title: 'Экскаваторы-погрузчики',
+                  desc: 'Универсальная техника для копки траншей, погрузочно-разгрузочных работ и благоустройства.',
+                  features: ['Копка траншей', 'Погрузочные работы', 'Благоустройство']
+                },
+                {
+                  icon: 'Activity',
+                  title: 'Катки асфальтовальные',
+                  desc: 'Техника для уплотнения асфальта, грунта и других дорожных покрытий.',
+                  features: ['Укатка асфальта', 'Уплотнение грунта', 'Дорожные работы']
+                },
+                {
+                  icon: 'Loader',
+                  title: 'Бетономешалки',
+                  desc: 'Доставка готового бетона на строительные объекты с возможностью подачи через лоток.',
+                  features: ['Доставка бетона', 'Любые объёмы', 'Подача через лоток']
+                },
+                {
+                  icon: 'Box',
+                  title: 'Камнедробилки',
+                  desc: 'Мобильные дробильные установки для переработки строительного мусора и камня.',
+                  features: ['Дробление камня', 'Переработка отходов', 'Производство щебня']
+                },
+                {
+                  icon: 'Maximize2',
+                  title: 'Грейдеры',
+                  desc: 'Планировка и профилирование дорог, разравнивание и перемещение грунта.',
+                  features: ['Планировка дорог', 'Профилирование', 'Грунтовые работы']
+                },
+                {
+                  icon: 'Crane',
+                  title: 'Самоходные краны',
+                  desc: 'Автокраны различной грузоподъёмности для подъёма и перемещения тяжёлых грузов.',
+                  features: ['До 50 тонн', 'Монтажные работы', 'Погрузка оборудования']
                 },
                 {
                   icon: 'Settings',
@@ -327,12 +388,19 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <Icon name="Truck" size={28} className="text-accent" />
-                <h3 className="text-xl font-bold">La Carte</h3>
+              <div className="flex items-center gap-3 mb-4">
+                <img 
+                  src="https://cdn.poehali.dev/files/648f57e9-1221-4c80-99dc-218283beb5a3.jpg" 
+                  alt="La Carte" 
+                  className="h-10 w-10 object-contain"
+                />
+                <div>
+                  <h3 className="text-xl font-bold">La Carte</h3>
+                  <p className="text-xs text-white/70">Сила в движении!</p>
+                </div>
               </div>
               <p className="text-white/80 text-sm">
-                Профессиональные логистические решения для вашего бизнеса
+                Грузовые перевозки, спецтранспорт и спецтехника
               </p>
             </div>
 
